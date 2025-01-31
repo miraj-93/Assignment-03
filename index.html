@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Tailwind CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">  
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.6/dist/full.css" rel="stylesheet" type="text/css" />
+     <script src="https://cdn.tailwindcss.com"></script>
+    <!--DaisyUI CDN Link-->
+    <link href="https://cdn.daisyui.com/4.4.4/daisyui.min.css" rel="stylesheet"/>
+    <!--fontAwsome cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+<!--animation style-->
+
+    <style> 
+        #animation{
+          width: 100%;
+          height: 80px;
+          background:url(./Resources/delivery.png);
+          position: relative;
+          animation: home 7s infinite;
+          background-repeat: no-repeat;
+        }
+        
+        @keyframes home {
+          from {left: 10px;}
+          to {left: 100%;}
+        }
+        </style>
+
+</head>
+<body>
+    <!--navbar container-->
+    <header class="grid grid-cols-2 gap-30 justify-center bg-white-600 items-center content-between max-w-full mx-10 my-3">
+
+        <div class="max-w-[150px] max-h-[30px]">
+            <img src="./Resources/logo-header.png" alt=""></div>
+        <div>      
+            
+        <div  class="hidden md:flex  w-[90%] lg:max-w-full flex my-2 gap-7 ">
+            <ul class="flex space-x-7 mx-auto max-w-full">
+                <li><a class=" hover:bg-sky-100 p-4 rounded-xl" href="">Products</a></li>
+                <li><a class=" hover:bg-sky-100 p-4 rounded-xl" href="">Service</a></li>
+                <li><a class=" hover:bg-sky-100 p-4 rounded-xl" href="">ContactUs</a></li>
+            </ul>
+            <ul class="flex gap-2 mx-auto max-w-full">
+                <li><a class=" hover:bg-sky-100 p-2 rounded-xl" href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                <li><a class=" hover:bg-sky-100 p-2 rounded-xl" href=""><i class="fa-solid fa-cart-plus"></i></a></li>
+                <li><a class="border-2 hover:bg-yellow-200 border-green-400 bg-white-700 -z-10 px-4 py-2 rounded-md " href="">LogIn</a></li>
+                <li class=""> <a class="bg-green-500 text-white rounded-md  p-2 " href="">Register</a></li>
+            </ul>
+        </div>
+        <div class="ml-12 p-6 text-2xl md:hidden lg:hidden">
+            <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h7" />
+          </svg>
+        </div>
+        
+    </header>
+    <!--banner section-->
+ <section class=" max-w-[100% bg-gradient-to-r from-stone-50 to-gray-50 ]   ">
+    <div class="max-w-full h-auto  mx-auto p-24"> 
+        <h1 class="text-center text-5xl">Freshness <span class="text-green-600">You Can</span><br>
+       <span class="text-green-700">Count</span>  On, Prices You’ll Love!</h1><br>
+       <p class="text-center w-100% ">Shop your daily essentials at unbeatable prices. From fresh produce to pantry ,<br>staples, we’ve got you covered every day!</p>
+    
+
+      <img  class="mx-auto my-10 w-11/12 h-[500px]" src="./Resources/hero-vegetables.png" alt="">
+ </div>
+
+
+<!--animaton section-->
+<div id="animation" class=" h-10 w-full my-5">
+<h1 class="bg-green-400 rounded-full text-white text-sm p-2 w-[50px] h-[50px] mt-20">Let's Go.</h1>
+
+</div>
+
+
+
+ </section>
+<!--Services section-->
+<section class="top-60 w-10/12 my-20 mx-auto">
+<h1 class="text-green-500 text-5xl mx-auto w-[250px] lg:ml-32 p-10 text-left ">Services</h1>
+<!--card container-->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-6 justify-between mx-auto lg:ml-40"> 
+    
+    
+
+<div class=" w-full items-center justify-center  bg-stone-200  p-5 rounded-lg">
+  <img  class="w-[30%] mx-auto my-5   bg-white  border-8 border-white  text-center rounded-full " src="./Resources/service.png" alt="">
+  <h1 class="text-center text-4xl  mx-10">24/7 Services </h1>
+  <p class="text-center mx-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+</div>
+
+<div class=" w-full  items-center justify-center  bg-yellow-100  p-5 rounded-lg">
+    <img  class="w-[30%] mx-auto my-5 bg-white  border-8 border-white text-center rounded-full" src="./Resources/delivery.png" alt="">
+    <h1 class="text-center text-4xl mx-10">Fast Delivery </h1>
+    <p class="text-center mx-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+  </div>
+
+  <div class=" w-full  items-center justify-center  bg-stone-200  p-5 rounded-lg">
+    <img  class="w-[30%] mx-auto my-5   bg-white  border-8 border-white text-center rounded-full" src="./Resources/healthy.png" alt="">
+    <h1 class="text-center text-4xl mx-10">Healthy Products </h1>
+    <p class="text-center mx-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+  </div>
+
+</div>
+</section>
+
+<!--Popular products section-->
+<section class="bg-red-50 max-w-full h-auto">
+    <h1 class="text-5xl text-green-500 ml-16 pt-20 pb-10">Popular Products</h1>
+    <!--container-->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-5 mx-10">
+    <!--card left-->
+<div class=" relative bg-lime-300 rounded-2xl w-11/12 h-[575px]">
+    <h1 class="text-5xl mt-10 ml-14 pt-14 ">30% Off</h1><img class="ml-36 h-[428px] w-[70%] absolute " src="./Resources/vegetable-offer.png" alt="">
+    <p class="p-5 ml-5 w-[50%] text-left  ">Winter brings a bounty of flavorful vegetables. Enjoy root vegetables like carrots, beets, and parsnips, hearty greens like kale and collard greens.</p>
+   <button class="btn bg-gray-200 text-black ml-14">Buy Now</button>
+   
+</div>
+
+<!--grid card right -->
+<div class="grid grid-cols-2 lg:grid-cols-3 gap-4 w-full mx-auto">
+
+<div class="w-[200px] flex max-h-[100px] bg-white-900 shadow-2xl rounded-xl">
+    <div class="rounded-lg space-x-3 my-4 mx-2">
+        <img class="w-full" src="./Resources/tomato.png" alt="">
+    </div>
+    <div class="w-full my-2 mx-2">
+        <i class="fa-regular fa-star bg-yellow-500 rounded-full"></i>4.5
+      <h1 class="text-black">Onion 1kg</h1>
+      <p class="text-black">$48.75</p>
+    </div>
+</div>
+
+<div class="w-full flex max-h-[100px] bg-white-900 shadow-2xl rounded-xl">
+    <div>
+        <img class="w-full" src="./Resources/Group 16 (1).png" alt="">
+    </div>
+    <div>
+        <i class="fa-regular fa-star  bg-yellow-500 rounded-full"></i>
+      <h1>Tomato 500g</h1>
+      <p>$37.75</p>
+    </div>
+</div>
+<div class="w-full flex max-h-[100px] bg-white-900 shadow-2xl rounded-xl">
+    <div>
+        <img class="w-full" src="./Resources/tomato.png" alt="">
+    </div>
+    <div>
+        <i class="fa-regular fa-star  bg-yellow-500 rounded-full"></i>
+      <h1>Onion 1kg</h1>
+      <p>$50.75</p>
+    </div>
+</div>
+<div class="w-full flex max-h-[100px] bg-white-900 shadow-2xl rounded-xl">
+    <div>
+        <img class="w-full" src="./Resources/Group 16 (1).png" alt="">
+    </div>
+    <div>
+        <i class="fa-regular fa-star  bg-yellow-500 rounded-full"></i>
+      <h1>Tomato 500g</h1>
+      <p>$37.75</p>
+    </div>
+</div>
+<div class="w-full flex max-h-[100px] bg-white-900 shadow-2xl rounded-xl">
+    <div>
+        <img class="w-full" src="./Resources/tomato.png" alt="">
+    </div>
+    <div>
+        <i class="fa-regular fa-star  bg-yellow-500 rounded-full"></i>
+      <h1>Onion 1kg.</h1>
+      <p>$50.75</p>
+    </div>
+</div>
+<div class="w-full flex max-h-[100px] bg-white-900 shadow-2xl rounded-xl">
+    <div>
+        <img class="w-full" src="./Resources/Group 16 (1).png" alt="">
+    </div>
+    <div>
+        <i class="fa-regular fa-star  bg-yellow-500 rounded-full"></i>
+      <h1>Tomato 500g</h1>
+      <p>$37.75</p>
+    </div>
+</div>
+<div class="w-full flex max-h-[100px] bg-white-900 shadow-2xl rounded-xl">
+    <div>
+        <img class="w-full" src="./Resources/tomato.png" alt="">
+    </div>
+    <div>
+        <i class="fa-regular fa-star  bg-yellow-500 rounded-full"></i>
+      <h1>Onion 1kg</h1>
+      <p>$50.75</p>
+    </div>
+</div>
+<div class="w-full flex max-h-[100px] bg-white-900 shadow-2xl rounded-xl">
+    <div>
+        <img class="w-full" src="./Resources/Group 16 (1).png" alt="">
+    </div>
+    <div>
+        <i class="fa-regular fa-star  bg-yellow-500 rounded-full"></i>
+      <h1>Tomato 500g</h1>
+      <p>$37.75</p>
+    </div>
+</div>
+<div class="w-full flex max-h-[100px] bg-white-900 shadow-2xl rounded-xl">
+    <div>
+        <img class="w-full" src="./Resources/tomato.png" alt="">
+    </div>
+    <div>
+        <i class="fa-regular fa-star  bg-yellow-500 rounded-full"></i>
+      <h1>Onion 1kg</h1>
+      <p>$50.75</p>
+    </div>
+</div>
+<div class="w-full flex max-h-[100px] bg-white-900 shadow-2xl rounded-xl">
+    <div>
+        <img class="w-full" src="./Resources/Group 16 (1).png" alt="">
+    </div>
+    <div>
+        <i class="fa-regular fa-star  bg-yellow-500 rounded-full"></i>
+      <h1>Tomato 500g</h1>
+      <p>$37.75</p>
+    </div>
+</div>
+
+
+</div>
+</section>
+<!--Arrival And Offer section-->
+<section class="max-w-9/12  py-24">
+<div class=" w-full mx-5">
+  <h1 class="text-5xl text-green-500 p-10 text-left">Arrival & Offer</h1>
+</div> 
+<!--grid container-->
+<div class="max-w-full max-h-auto grid grid-cols-1 gap-6 justify-between items-center lg:grid-cols-2  ">
+<!--grid first colum -->
+<div class="flex bg-green-800 ml-10 mr-10 p-5 w-[100%] rounded-2xl shadow-2xl shadow-green-700">
+    <div class="w-full mx-auto">
+        <img class="w-full" src="./Resources/dawat-logo.png" alt="">
+        <Button class="bg-gray-50 rounded-2xl mx-14 my-2 p-2 w-[200px] text-black text-lg opacity-20">Cook Exotic Dishes</Button>
+        <p class="text-3xl text-white mx-14">UP to 20% OFF</p>
+    </div>
+    <div class="w-[100%] lg:w-[80%]  mx-auto">
+      <img src="./Resources/dawat-mock-up.png" alt="">
+     </div>
+ </div>
+ <!--grid second colum-->
+<div class="  flex justify-between items-center bg-blue-950  shadow-blue-800 shadow-2xl mx-20  p-5 w-[100]% lg:w-[80%] h-[280px] rounded-2xl">
+
+    <div class="w-full">
+        <img src="./Resources/dawat-logo.png" alt="">
+        <Button class="bg-gray-50 rounded-2xl my-2 mx-14 p-2 w-[180px] text-black text-lg opacity-20">Cook Exotic Dishes</Button>
+        <p class="text-3xl text-white mx-12">UP to 20% OFF</p>  
+    </div>
+
+    <div class="max-w-full lg:w-[90%] mx-4 my-5 py-6">
+      <img src="./Resources/india-gate-mock-up.png" alt="">
+    </div>
+
+</div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+<footer>
+    <div class="w-full bg-green-500 grid grid-cols-1 gap-4  md:grid-cols-3 lg:grid-cols-3 justify-evenly">
+
+        <div class="w-full mx-auto mt-[50px] ml-8 p-10">
+            <img class=" p-5" src="./Resources/logo-footer.png" alt="">
+            <p class="mx-10   p-2 text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum corporis quidem mollitia.Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        </div>
+       <div class="my-10 w-2/4 ml-20">
+            <ul class="mt-[110px]">
+             <li class="text-white text-lg">Home</li><br>
+             <li class="text-white text-lg">Service</li><br>
+             <li class="text-white text-lg">Contact</li>
+            </ul>
+
+       </div>
+       <div class="my-10 mx-auto">
+        <h3 class="text-white text-xl mt-[200px] my-2 ">Follow US</h3>
+        <i class="fa-brands fa-facebook text-white text-3xl"></i> <i class="fa-brands fa-instagram  text-white text-3xl"></i>  <i class="fa-brands fa-linkedin  text-white text-3xl"></i>  <i class="fa-brands fa-twitter  text-white text-3xl"></i>
+       </div>
+    </div>
+
+
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
